@@ -1,1 +1,15 @@
 /* add your styles here */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px; 
+  }
+.image-container img{
+    width: 100%;
+  }
+
+  .header{
+
+    width: 300px;
+   margin: auto;
+  }

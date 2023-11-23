@@ -30,7 +30,10 @@ export default class AppClass extends Component{
 
     return (
       <div className="App">
-        <h1>Image Gallery (Class Component)</h1>
+        <div className="header">
+        <h1>Image Gallery</h1>
+        </div> 
+      
         <div className="image-container">
           {imagesData.map((item) => (
             <img key={item.id} src={item.img} alt={`Image ${item.id}`} />
