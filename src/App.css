@@ -1,1 +1,27 @@
 /* add your styles here */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 760px);
+    row-gap: 30px;
+
+
+}
+
+.gallery>img {
+    width: 735px;
+    padding-left: 10px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+small {
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
