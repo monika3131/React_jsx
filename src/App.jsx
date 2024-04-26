@@ -23,8 +23,21 @@ const imageData = ()=>{
   return data;
 }
 
-function App() {
-  // code here
+class AppClass extends Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>Image Gallery</h1>
+        <div className="image-container">
+          {imageData().map(item => (
+            <img key={item.id} src={item.img} alt={`Image ${item.id}`} />
+          ))}
+        </div>
+      </div>
+    );
+  }
 }
+
+export default AppClass;
 
 export default App;
