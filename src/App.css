@@ -1,1 +1,38 @@
 /* add your styles here */
+.App {
+    text-align: center;
+  }
+  
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    border: 2px solid #ccc; /* Add border */
+    border-radius: 8px; /* Add border radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    padding: 10px; /* Add padding */
+  }
+  
+  .image-container img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 8px; /* Add border radius to images */
+  }
+  
+  /* Larger images in the first column */
+  .image-container img:nth-child(1),
+  .image-container img:nth-child(2) {
+    grid-column: 1;
+  }
+  
+  /* Smaller images in the second column */
+  .image-container img:nth-child(3) {
+    grid-column: 2;
+    grid-row: 1; /* Position the third image in the first row of the second column */
+  }
+  
+  .image-container img:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2; /* Position the fourth image in the second row of the second column */
+  }
