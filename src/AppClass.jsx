@@ -25,6 +25,21 @@ export default class AppClass extends Component{
     ]
     return data;
   }
+class AppClass extends Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>Image Gallery</h1>
+        <div className="image-container">
+          {imageData().map(item => (
+            <img key={item.id} src={item.img} alt={`Image ${item.id}`} />
+          ))}
+        </div>
+      </div>
+    );
+  }
+}
 
-  // code here
+export default AppClass;
+
 }
